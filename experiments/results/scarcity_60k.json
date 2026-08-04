@@ -1,0 +1,42 @@
+{
+  "seed42": {
+    "CSRL": {
+      "comp": 0.167,
+      "crit": 0.0
+    },
+    "PureDRL": {
+      "comp": 0.662,
+      "crit": 0.424
+    }
+  },
+  "seed123": {
+    "CSRL": {
+      "comp": 0.5,
+      "crit": 0.143
+    },
+    "PureDRL": {
+      "comp": 0.584,
+      "crit": 0.57
+    }
+  },
+  "seed456": {
+    "CSRL": {
+      "comp": 0.167,
+      "crit": 0.0
+    },
+    "PureDRL": {
+      "comp": 0.583,
+      "crit": 0.714
+    }
+  },
+  "seed789": {
+    "CSRL": {
+      "comp": 0.335,
+      "crit": 0.286
+    },
+    "PureDRL": {
+      "comp": 0.579,
+      "crit": 0.707
+    }
+  }
+}

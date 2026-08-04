@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" font-family="Times New Roman, serif" font-size="11">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2ecc71"/><stop offset="100%" stop-color="#27ae60"/></linearGradient>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3498db"/><stop offset="100%" stop-color="#2980b9"/></linearGradient>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e67e22"/><stop offset="100%" stop-color="#d35400"/></linearGradient>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e74c3c"/><stop offset="100%" stop-color="#c0392b"/></linearGradient>
+    <marker id="arr" markerWidth="3" markerHeight="5" refX="3" refY="3" orient="auto"><polygon points="0 0, 3 3, 0 6" fill="#c0392b"/></marker>
+  </defs>
+
+  <text x="400" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#2c3e50">Ablation Study: P999 Tail Latency (8 flows, 20K training steps)</text>
+
+  <!-- Bars -->
+  <rect x="60" y="220" width="120" height="0" fill="url(#bg1)"/>
+  <text x="120" y="215" text-anchor="middle" font-size="9" font-weight="bold">171,140 μs</text>
+  <rect x="60" y="175" width="120" height="45" fill="url(#bg1)" rx="3"/>
+  <text x="120" y="175" text-anchor="middle" font-size="9" fill="#27ae60">Full CSRL</text>
+  <text x="120" y="167" text-anchor="middle" font-size="9" fill="#27ae60">λ=0.1 ✓ NCC</text>
+
+  <rect x="220" y="172" width="120" height="48" fill="url(#bg2)" rx="3"/>
+  <text x="280" y="215" text-anchor="middle" font-size="9" font-weight="bold">192,106 μs</text>
+  <text x="280" y="172" text-anchor="middle" font-size="9" fill="#2980b9">No Safety Shield</text>
+  <text x="280" y="164" text-anchor="middle" font-size="9" fill="#2980b9">+12.3%</text>
+
+  <rect x="380" y="195" width="120" height="25" fill="url(#bg3)" rx="3"/>
+  <text x="440" y="215" text-anchor="middle" font-size="9" font-weight="bold">150,463 μs</text>
+  <text x="440" y="195" text-anchor="middle" font-size="9" fill="#d35400">No Semantic Weight</text>
+  <text x="440" y="187" text-anchor="middle" font-size="9" fill="#d35400">-12.1% vs Full</text>
+
+  <rect x="540" y="190" width="120" height="30" fill="url(#bg4)" rx="3"/>
+  <text x="600" y="215" text-anchor="middle" font-size="9" font-weight="bold">158,735 μs</text>
+  <text x="600" y="195" text-anchor="middle" font-size="9" fill="#c0392b">No NC (λ=0)</text>
+  <text x="600" y="187" text-anchor="middle" font-size="9" fill="#c0392b">-7.2% vs Full</text>
+
+  <!-- Warning: NC constraint removes safety margin -->
+  <rect x="300" y="75" width="440" height="55" rx="5" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="310" y="95" font-weight="bold" font-size="9" fill="#c0392b">⚠ NC Constraint Removal Trade-off:</text>
+  <text x="310" y="111" font-size="9" fill="#555">P50 drops from 108,488 → 95,295 μs (12.2% faster median) — BUT P999 rises from</text>
+  <text x="310" y="125" font-size="9" fill="#555">150,463 → 158,735 μs. Unconstrained optimum yields better averages, worse tails.</text>
+
+  <!-- Baseline annotation -->
+  <line x1="60" y1="220" x2="770" y2="220" stroke="#aaa" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <text x="60" y="235" font-size="8" fill="#888">N.B.: All configurations achieve 100% completion rate at this flow density; λ remains at floor due to zero WCD violations.</text>
+
+  <!-- Y-axis -->
+  <line x1="45" y1="70" x2="45" y2="220" stroke="#aaa" stroke-width="1"/>
+  <text x="18" y="73" font-size="8" fill="#888" transform="rotate(-90, 18, 73)">P999 (μs) ↑</text>
+
+  <text x="400" y="280" text-anchor="middle" font-size="9" fill="#aaa">Fig. 3: Ablation study — P999 tail latency across four CSRL configurations on 8 flows.</text>
+</svg>

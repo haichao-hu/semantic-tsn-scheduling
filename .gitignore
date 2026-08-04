@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+
+# INET framework (clone separately; the simulation wrapper uses it)
+simulation/inet/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+missfont.log
+
+# IDE
+.idea/
+.vscode/
+
+# Experiment outputs (regenerable via scripts; curated results live in experiments/results/)
+experiments/run_*/
+experiments/matrix_*.json
+experiments/*.png
+
+# Internal project documents (kept outside the repo in ../tsn_docs/)
+/STATUS.md
+/ROADMAP.md
+/研究申请报告*.md
+/TSN网络研究_题目*.txt
+
+# Empty placeholder dirs
+/data/
+/tools/

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Times New Roman, serif" font-size="11">
+  <defs>
+    <linearGradient id="cs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ecc71"/><stop offset="100%" stop-color="#27ae60"/></linearGradient>
+    <linearGradient id="dr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3498db"/><stop offset="100%" stop-color="#2980b9"/></linearGradient>
+    <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e74c3c"/><stop offset="100%" stop-color="#c0392b"/></linearGradient>
+    <linearGradient id="fc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e67e22"/><stop offset="100%" stop-color="#d35400"/></linearGradient>
+  </defs>
+
+  <text x="400" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#2c3e50">Task Completion Rate Comparison</text>
+
+  <!-- === 5 flows === -->
+  <text x="90" y="55" text-anchor="middle" font-weight="bold" font-size="11" fill="#555">5 Flows</text>
+  <rect x="10" y="68" width="28" height="260" fill="url(#cs)"/>
+  <text x="24" y="63" text-anchor="middle" font-size="8" fill="#27ae60">100%</text>
+  <rect x="42" y="68" width="28" height="260" fill="url(#dr)"/>
+  <text x="56" y="63" text-anchor="middle" font-size="8" fill="#2980b9">100%</text>
+  <rect x="74" y="172" width="28" height="156" fill="url(#sg)"/>
+  <text x="88" y="167" text-anchor="middle" font-size="8" fill="#c0392b">40.2%</text>
+  <rect x="106" y="170" width="28" height="158" fill="url(#fc)"/>
+  <text x="120" y="165" text-anchor="middle" font-size="8" fill="#d35400">40.8%</text>
+
+  <!-- === 12 flows === -->
+  <text x="240" y="55" text-anchor="middle" font-weight="bold" font-size="11" fill="#555">12 Flows</text>
+  <rect x="160" y="68" width="28" height="260" fill="url(#cs)"/>
+  <text x="174" y="63" text-anchor="middle" font-size="8" fill="#27ae60">100%</text>
+  <rect x="192" y="68" width="28" height="260" fill="url(#dr)"/>
+  <text x="206" y="63" text-anchor="middle" font-size="8" fill="#2980b9">100%</text>
+  <rect x="224" y="188" width="28" height="140" fill="url(#sg)"/>
+  <text x="238" y="183" text-anchor="middle" font-size="8" fill="#c0392b">30.8%</text>
+  <rect x="256" y="195" width="28" height="133" fill="url(#fc)"/>
+  <text x="270" y="190" text-anchor="middle" font-size="8" fill="#d35400">27.7%</text>
+
+  <!-- === Dynamic Arrival === -->
+  <text x="440" y="55" text-anchor="middle" font-weight="bold" font-size="11" fill="#555">Dynamic (5+3), New Flows</text>
+  <rect x="310" y="68" width="28" height="260" fill="url(#cs)"/>
+  <text x="324" y="63" text-anchor="middle" font-size="8" fill="#27ae60">100%</text>
+  <rect x="342" y="68" width="28" height="260" fill="url(#dr)"/>
+  <text x="356" y="63" text-anchor="middle" font-size="8" fill="#2980b9">100%</text>
+  <rect x="374" y="326" width="28" height="2" fill="url(#sg)"/>
+  <text x="388" y="324" text-anchor="middle" font-size="8" fill="#c0392b">0.7%</text>
+  <rect x="406" y="315" width="28" height="13" fill="url(#fc)"/>
+  <text x="420" y="313" text-anchor="middle" font-size="8" fill="#d35400">4.7%</text>
+
+  <!-- Y-axis -->
+  <line x1="465" y1="68" x2="465" y2="330" stroke="#aaa" stroke-width="1"/>
+  <text x="440" y="72" text-anchor="end" font-size="8" fill="#888">0%</text>
+  <line x1="460" y1="200" x2="470" y2="200" stroke="#aaa" stroke-width="0.5"/>
+  <text x="440" y="203" text-anchor="end" font-size="8" fill="#888">50%</text>
+  <line x1="460" y1="68" x2="470" y2="68" stroke="#aaa" stroke-width="0.5"/>
+  <text x="440" y="71" text-anchor="end" font-size="8" fill="#888">100%</text>
+
+  <!-- Legend -->
+  <rect x="510" y="80" width="12" height="12" fill="url(#cs)"/>
+  <text x="528" y="91" font-size="9">CSRL (ours)</text>
+  <rect x="510" y="100" width="12" height="12" fill="url(#dr)"/>
+  <text x="528" y="111" font-size="9">Pure DRL (Islam 2024)</text>
+  <rect x="510" y="120" width="12" height="12" fill="url(#sg)"/>
+  <text x="528" y="131" font-size="9">Static GCL (Craciunas 2016)</text>
+  <rect x="510" y="140" width="12" height="12" fill="url(#fc)"/>
+  <text x="528" y="151" font-size="9">FIFO + CBS</text>
+
+  <!-- Key insight callout -->
+  <rect x="510" y="180" width="275" height="75" rx="5" fill="#fef9e7" stroke="#f0cc3e" stroke-width="1"/>
+  <text x="525" y="200" font-size="9" fill="#e67e22" font-weight="bold">Key Insight:</text>
+  <text x="525" y="217" font-size="9" fill="#555">Static GCL collapses to 0.7% for</text>
+  <text x="525" y="232" font-size="9" fill="#555">dynamically arriving flows — the</text>
+  <text x="525" y="247" font-size="9" fill="#555">GCL buffer is fully allocated at t=0.</text>
+
+  <!-- X labels -->
+  <text x="24" y="348" text-anchor="middle" font-size="8" fill="#888">CSRL</text>
+  <text x="56" y="348" text-anchor="middle" font-size="8" fill="#888">DRL</text>
+  <text x="88" y="348" text-anchor="middle" font-size="8" fill="#888">GCL</text>
+  <text x="120" y="348" text-anchor="middle" font-size="8" fill="#888">CBS</text>
+
+  <text x="400" y="355" text-anchor="middle" font-size="9" fill="#aaa">Fig. 2: Task completion rate across three experiment modes. CSRL and Pure DRL achieve 100% in all scenarios. Static scheduling fails catastrophically under dynamic arrivals.</text>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" font-family="Times New Roman, serif" font-size="11">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#333"/></marker>
+    <linearGradient id="cncBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f4f8"/><stop offset="100%" stop-color="#d4e6f1"/></linearGradient>
+    <linearGradient id="cucBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fef9e7"/><stop offset="100%" stop-color="#fdebd0"/></linearGradient>
+    <linearGradient id="swBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f9fa"/><stop offset="100%" stop-color="#e9ecef"/></linearGradient>
+  </defs>
+
+  <text x="440" y="20" text-anchor="middle" font-weight="bold" font-size="14">CSRL Framework Overview</text>
+
+  <!-- CUC Box -->
+  <rect x="30" y="40" width="200" height="120" rx="8" fill="url(#cucBg)" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="130" y="65" text-anchor="middle" font-weight="bold" font-size="12">CUC (User Configurator)</text>
+  <line x1="50" y1="75" x2="210" y2="75" stroke="#f0cc3e" stroke-width="0.5"/>
+  <text x="130" y="95" text-anchor="middle" font-size="10">Intent Ontology Encoder</text>
+  <text x="130" y="112" text-anchor="middle" font-size="9" fill="#888">Task Intent → FlowSemantics</text>
+  <text x="130" y="128" text-anchor="middle" font-size="9" fill="#888">6 task types → 4 criticality levels</text>
+  <text x="130" y="148" text-anchor="middle" font-size="9" fill="#888">N-IF: REST/gRPC/OPC-UA</text>
+
+  <!-- Arrow CUC→CNC -->
+  <line x1="230" y1="100" x2="285" y2="100" stroke="#f39c12" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="260" y="93" text-anchor="middle" font-size="8" fill="#e67e22">FlowSemantics</text>
+
+  <!-- CNC Box -->
+  <rect x="290" y="40" width="280" height="200" rx="8" fill="url(#cncBg)" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="430" y="65" text-anchor="middle" font-weight="bold" font-size="12">CNC (Network Configurator)</text>
+  <line x1="310" y1="75" x2="550" y2="75" stroke="#4a90d9" stroke-width="0.5"/>
+
+  <!-- CSRL -->
+  <rect x="310" y="85" width="240" height="45" rx="5" fill="#fff" stroke="#8e44ad" stroke-width="1"/>
+  <text x="430" y="103" text-anchor="middle" font-weight="bold" font-size="10" fill="#7d3c98">CSRL Scheduler (PPO, 32K params)</text>
+  <text x="430" y="118" text-anchor="middle" font-size="8" fill="#888">State: queues+GCL phase+semantic vectors</text>
+  <text x="430" y="130" text-anchor="middle" font-size="8" fill="#888">Action: dispatch phase, window offset</text>
+
+  <line x1="430" y1="130" x2="430" y2="142" stroke="#333" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- NC Shield -->
+  <rect x="310" y="143" width="240" height="45" rx="5" fill="#eafaf1" stroke="#27ae60" stroke-width="1"/>
+  <text x="430" y="161" text-anchor="middle" font-weight="bold" font-size="10" fill="#1e8449">NC Safety Shield (Schedulability Check)</text>
+  <text x="430" y="176" text-anchor="middle" font-size="8" fill="#888">Validate: window fit, mutual exclusion, deadline</text>
+
+  <line x1="430" y1="188" x2="430" y2="210" stroke="#333" stroke-width="1"/>
+
+  <rect x="310" y="210" width="240" height="22" rx="4" fill="#27ae60" stroke="#1e8449" stroke-width="0.5"/>
+  <text x="430" y="225" text-anchor="middle" fill="#fff" font-size="9">Safe GCL → NETCONF/YANG S-IF</text>
+
+  <!-- Arrow CNC→Switch -->
+  <line x1="570" y1="100" x2="630" y2="100" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="600" y="93" text-anchor="middle" font-size="8" fill="#2c5f8a">GCL Config</text>
+
+  <!-- Switch Box -->
+  <rect x="640" y="40" width="220" height="160" rx="8" fill="url(#swBg)" stroke="#777" stroke-width="1.5"/>
+  <text x="750" y="65" text-anchor="middle" font-weight="bold" font-size="12">TSN Switches (802.1Qbv)</text>
+  <line x1="660" y1="75" x2="840" y2="75" stroke="#aaa" stroke-width="0.5"/>
+
+  <rect x="660" y="85" width="90" height="35" rx="4" fill="#fff" stroke="#aaa"/>
+  <text x="705" y="100" text-anchor="middle" font-size="9">Switch 1</text>
+  <text x="705" y="113" text-anchor="middle" font-size="8" fill="#888">Q7/Q6 TAS</text>
+
+  <rect x="760" y="85" width="90" height="35" rx="4" fill="#fff" stroke="#aaa"/>
+  <text x="805" y="100" text-anchor="middle" font-size="9">Switch 2</text>
+  <text x="805" y="113" text-anchor="middle" font-size="8" fill="#888">Q5/Q4 CBS</text>
+
+  <rect x="660" y="130" width="90" height="35" rx="4" fill="#fff" stroke="#aaa"/>
+  <text x="705" y="145" text-anchor="middle" font-size="9">Switch 3</text>
+  <text x="705" y="158" text-anchor="middle" font-size="8" fill="#888">Q0-Q3 FIFO</text>
+
+  <rect x="760" y="130" width="90" height="35" rx="4" fill="#fff" stroke="#aaa"/>
+  <text x="805" y="148" text-anchor="middle" font-size="9">8 queues/port</text>
+  <text x="805" y="159" text-anchor="middle" font-size="8" fill="#888">gPTP sync</text>
+
+  <!-- End Hosts -->
+  <rect x="640" y="215" width="100" height="30" rx="5" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="690" y="234" text-anchor="middle" font-size="9">AGV / Robot Arm</text>
+
+  <rect x="760" y="215" width="100" height="30" rx="5" fill="#eafaf1" stroke="#27ae60" stroke-width="1"/>
+  <text x="810" y="234" text-anchor="middle" font-size="9">PLC / Actuator</text>
+
+  <line x1="690" y1="215" x2="690" y2="200" stroke="#e74c3c" stroke-width="0.8"/>
+  <line x1="810" y1="215" x2="810" y2="200" stroke="#27ae60" stroke-width="0.8"/>
+
+  <!-- Training box -->
+  <rect x="30" y="280" width="820" height="55" rx="6" fill="#f8f9fa" stroke="#ccc" stroke-width="1"/>
+  <text x="440" y="300" text-anchor="middle" font-weight="bold" font-size="10">Training (offline): TSNEnv (Gym) simulates switching</text>
+  <text x="440" y="318" text-anchor="middle" font-size="9" fill="#555">reward = Σ w_i · 1[deadline met] − 0.3 · Σ w_i · 1[missed] − λ · violations   →   PPO gradient updates + Lagrangian dual ascent</text>
+</svg>

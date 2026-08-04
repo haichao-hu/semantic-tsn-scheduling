@@ -1,0 +1,111 @@
+{
+  "config": {
+    "mode": "default",
+    "flows": 5,
+    "switches": 3,
+    "rate": 1000.0,
+    "hyperperiod": 10000.0,
+    "train": 60000,
+    "eval": 10,
+    "seed": 42
+  },
+  "mode": "default",
+  "results": {
+    "B1_StaticGCL": {
+      "completion_rate": 1.0,
+      "completion_rate_semantic": 1.0,
+      "completion_rate_critical": 1.0,
+      "completion_rate_be": 1.0,
+      "admission_rate": 1.0,
+      "p50_us": 2.047999999998865,
+      "p99_us": 8.191999999980908,
+      "p999_us": 8.192000000039116,
+      "mean_us": 2.329098039193641,
+      "max_us": 8.192000000039116,
+      "min_us": 2.0479999999515712,
+      "n_e2e_samples": 51000,
+      "packets_sent": 57000,
+      "n_episodes": 10,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0
+      },
+      "prep_time_s": 0.7359697818756104
+    },
+    "B3_FIFOCBS": {
+      "completion_rate": 1.0,
+      "completion_rate_semantic": 1.0,
+      "completion_rate_critical": 1.0,
+      "completion_rate_be": 1.0,
+      "admission_rate": 1.0,
+      "p50_us": 2.047999999998865,
+      "p99_us": 6.144000000029337,
+      "p999_us": 6.144000000029337,
+      "mean_us": 2.288941176448839,
+      "max_us": 6.144000000029337,
+      "min_us": 2.0479999999515712,
+      "n_e2e_samples": 51000,
+      "packets_sent": 57000,
+      "n_episodes": 10,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0
+      }
+    },
+    "B2_PureDRL": {
+      "completion_rate": 1.0,
+      "completion_rate_semantic": 1.0,
+      "completion_rate_critical": 1.0,
+      "completion_rate_be": 1.0,
+      "admission_rate": 1.0,
+      "p50_us": 4.0959999999031425,
+      "p99_us": 309.38730855990434,
+      "p999_us": 341.0914774160385,
+      "mean_us": 135.00504568242258,
+      "max_us": 341.0914774160392,
+      "min_us": 2.0479999999515712,
+      "n_e2e_samples": 51000,
+      "packets_sent": 57000,
+      "n_episodes": 10,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0
+      },
+      "train_time_s": 221.88449144363403
+    },
+    "CSRL": {
+      "completion_rate": 1.0,
+      "completion_rate_semantic": 1.0,
+      "completion_rate_critical": 1.0,
+      "completion_rate_be": 1.0,
+      "admission_rate": 1.0,
+      "p50_us": 271.30838861269876,
+      "p99_us": 2117.352401315351,
+      "p999_us": 2117.352401315351,
+      "mean_us": 277.8033250829996,
+      "max_us": 2134.2710113759204,
+      "min_us": 6.143999999854714,
+      "n_e2e_samples": 51000,
+      "packets_sent": 57000,
+      "n_episodes": 10,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0
+      },
+      "train_time_s": 177.91116166114807,
+      "final_lambda": 0.12400000000000003
+    }
+  }
+}

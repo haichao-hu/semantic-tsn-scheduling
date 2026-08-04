@@ -1,0 +1,282 @@
+{
+  "seed42": {
+    "StaticGCL": {
+      "comp": 0.4166666666666667,
+      "crit": 0.42857142857142855,
+      "per_flow": {
+        "sc_ST_L3a": 0.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2c": 0.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 0.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L3b": 0.0,
+        "sc_ST_L2b": 0.0,
+        "sc_ST_L2a": 0.0,
+        "sc_ST_L2d": 0.0
+      }
+    },
+    "FIFOCBS": {
+      "comp": 0.8333333333333334,
+      "crit": 0.7142857142857143,
+      "per_flow": {
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L2a": 0.0,
+        "sc_ST_L2d": 0.0
+      }
+    },
+    "PureDRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 0.0,
+      "t_s": 583,
+      "per_flow": {
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L2d": 1.0
+      }
+    },
+    "CSRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 0.962,
+      "t_s": 555,
+      "per_flow": {
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L2d": 1.0
+      }
+    }
+  },
+  "seed123": {
+    "StaticGCL": {
+      "comp": 0.4166666666666667,
+      "crit": 0.42857142857142855,
+      "per_flow": {
+        "sc_ST_L2b": 0.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 0.0,
+        "sc_ST_L2c": 0.0,
+        "sc_ST_L3a": 0.0,
+        "sc_ST_L2a": 0.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2d": 0.0,
+        "sc_ST_L3b": 0.0,
+        "sc_ST_L1b": 1.0
+      }
+    },
+    "FIFOCBS": {
+      "comp": 0.8333333333333334,
+      "crit": 0.8571428571428571,
+      "per_flow": {
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L3b": 0.0,
+        "sc_ST_L1b": 0.0
+      }
+    },
+    "PureDRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 0.0,
+      "t_s": 574,
+      "per_flow": {
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L1b": 1.0
+      }
+    },
+    "CSRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 1.0,
+      "t_s": 543,
+      "per_flow": {
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L1b": 1.0
+      }
+    }
+  },
+  "seed456": {
+    "StaticGCL": {
+      "comp": 0.4166666666666667,
+      "crit": 0.42857142857142855,
+      "per_flow": {
+        "sc_ST_L0": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2a": 0.0,
+        "sc_ST_L2d": 0.0,
+        "sc_ST_L2e": 0.0,
+        "sc_ST_L3a": 0.0,
+        "sc_ST_L3b": 0.0,
+        "sc_ST_L2b": 0.0,
+        "sc_ST_L2c": 0.0
+      }
+    },
+    "FIFOCBS": {
+      "comp": 0.8333333333333334,
+      "crit": 0.7142857142857143,
+      "per_flow": {
+        "sc_ST_L0": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L2b": 0.0,
+        "sc_ST_L2c": 0.0
+      }
+    },
+    "PureDRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 0.0,
+      "t_s": 580,
+      "per_flow": {
+        "sc_ST_L0": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L2c": 1.0
+      }
+    },
+    "CSRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 0.938,
+      "t_s": 556,
+      "per_flow": {
+        "sc_ST_L0": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L2a": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L2c": 1.0
+      }
+    }
+  },
+  "seed789": {
+    "StaticGCL": {
+      "comp": 0.4166666666666667,
+      "crit": 0.42857142857142855,
+      "per_flow": {
+        "sc_ST_L2c": 0.0,
+        "sc_ST_L2e": 0.0,
+        "sc_ST_L2d": 0.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L3b": 0.0,
+        "sc_ST_L3a": 0.0,
+        "sc_ST_L2b": 0.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L2a": 0.0
+      }
+    },
+    "FIFOCBS": {
+      "comp": 0.8333333333333334,
+      "crit": 0.7142857142857143,
+      "per_flow": {
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L1b": 0.0,
+        "sc_ST_L2a": 0.0
+      }
+    },
+    "PureDRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 0.0,
+      "t_s": 579,
+      "per_flow": {
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L2a": 1.0
+      }
+    },
+    "CSRL": {
+      "comp": 1.0,
+      "crit": 1.0,
+      "lam": 1.0,
+      "t_s": 556,
+      "per_flow": {
+        "sc_ST_L2c": 1.0,
+        "sc_ST_L2e": 1.0,
+        "sc_ST_L2d": 1.0,
+        "sc_ST_L0": 1.0,
+        "sc_ST_L3b": 1.0,
+        "sc_ST_L3a": 1.0,
+        "sc_ST_L2b": 1.0,
+        "sc_ST_L1a": 1.0,
+        "sc_ST_L1b": 1.0,
+        "sc_ST_L2a": 1.0
+      }
+    }
+  }
+}

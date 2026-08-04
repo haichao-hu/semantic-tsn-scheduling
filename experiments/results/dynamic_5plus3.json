@@ -1,0 +1,113 @@
+{
+  "config": {
+    "mode": "dynamic",
+    "flows": 8,
+    "switches": 3,
+    "rate": 1000.0,
+    "hyperperiod": 10000.0,
+    "train": 60000,
+    "eval": 10,
+    "seed": 42
+  },
+  "mode": "dynamic",
+  "n_base": 5,
+  "arrival_interval": 20,
+  "results": {
+    "B1_StaticGCL": {
+      "completion_rate": 1.0,
+      "completion_rate_base": 1.0,
+      "completion_rate_new": 1.0,
+      "p50_us": 2.048000000002503,
+      "p99_us": 8.191999999806285,
+      "n_e2e_samples": 57000,
+      "arrival_events": 30,
+      "arrival_acceptance_rate": 1.0,
+      "n_episodes": 10,
+      "n_base": 5,
+      "n_arriving": 3,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0,
+        "f_rand_005": 1.0,
+        "f_rand_006": 1.0,
+        "f_rand_007": 1.0
+      },
+      "prep_time_s": 0.7447421550750732
+    },
+    "B3_FIFOCBS": {
+      "completion_rate": 1.0,
+      "completion_rate_base": 1.0,
+      "completion_rate_new": 1.0,
+      "p50_us": 2.048000000002503,
+      "p99_us": 6.144000000029337,
+      "n_e2e_samples": 57000,
+      "arrival_events": 30,
+      "arrival_acceptance_rate": 1.0,
+      "n_episodes": 10,
+      "n_base": 5,
+      "n_arriving": 3,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0,
+        "f_rand_005": 1.0,
+        "f_rand_006": 1.0,
+        "f_rand_007": 1.0
+      }
+    },
+    "B2_PureDRL": {
+      "completion_rate": 1.0,
+      "completion_rate_base": 1.0,
+      "completion_rate_new": 1.0,
+      "p50_us": 2.048000000002503,
+      "p99_us": 6.144000000029337,
+      "n_e2e_samples": 57000,
+      "arrival_events": 30,
+      "arrival_acceptance_rate": 1.0,
+      "n_episodes": 10,
+      "n_base": 5,
+      "n_arriving": 3,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0,
+        "f_rand_005": 1.0,
+        "f_rand_006": 1.0,
+        "f_rand_007": 1.0
+      },
+      "train_time_s": 178.66826510429382
+    },
+    "CSRL": {
+      "completion_rate": 0.9998750000000001,
+      "completion_rate_base": 1.0,
+      "completion_rate_new": 0.9996666666666667,
+      "p50_us": 190.8832259993651,
+      "p99_us": 1144.1186493179994,
+      "n_e2e_samples": 57000,
+      "arrival_events": 30,
+      "arrival_acceptance_rate": 0.9996666666666667,
+      "n_episodes": 10,
+      "n_base": 5,
+      "n_arriving": 3,
+      "per_flow_completion": {
+        "f_rand_000": 1.0,
+        "f_rand_001": 1.0,
+        "f_rand_002": 1.0,
+        "f_rand_003": 1.0,
+        "f_rand_004": 1.0,
+        "f_rand_005": 1.0,
+        "f_rand_006": 1.0,
+        "f_rand_007": 0.999
+      },
+      "train_time_s": 185.40345978736877,
+      "final_lambda": 0.2900000000000001
+    }
+  }
+}
